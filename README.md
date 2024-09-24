@@ -4,7 +4,7 @@ Este projeto em Java implementa um gerenciador simples de tarefas usando uma lis
 
 ## Funcionalidades
 
--> **Adicionar tarefa**: O usuário pode inserir uma nova tarefa.
+-> **Adicionar tarefa**: O usuário pode inserir uma nova tarefa.\n
 -> **Concluir tarefa**: O usuário pode marcar uma tarefa como concluída.
 -> **Visualizar lista de tarefas**: O usuário pode ver todas as tarefas atualmente na lista.
 -> **Remover tarefa**: O usuário pode remover uma tarefa da lista.
