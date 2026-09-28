@@ -1,15 +1,56 @@
-# Lista de Tarefas
+# Task List CLI / Lista de Tarefas
 
-Este projeto em Java implementa um gerenciador simples de tarefas usando uma lista dinâmica. O usuário pode adicionar, concluir, visualizar e remover tarefas de uma lista.
+A small Java console application for practicing collections, control flow, methods, and user input.
 
-## Funcionalidades
+## Features
 
-1. **Adicionar tarefa**: O usuário pode inserir uma nova tarefa.
-2. **Concluir tarefa**: O usuário pode marcar uma tarefa como concluída.
-3. **Visualizar lista de tarefas**: O usuário pode ver todas as tarefas atualmente na lista.
-4. **Remover tarefa**: O usuário pode remover uma tarefa da lista.
-5. **Finalizar**: O usuário pode sair do programa.
+- Add a task.
+- Mark a task as completed.
+- List tasks.
+- Remove a task.
+- Exit and print the final list.
 
-## Contribuições 
+Tasks are stored in an `ArrayList<String>` during the current session. The interface is in Portuguese.
 
-Sinta-se a vontade para contribuir com o projeto! Se você encontrar algum bug ou tiver uma sugestão de melhoria sinta-se a vontade para abrir um issue ou enviar um pull request.
+## Run locally
+
+With a JDK installed, run these commands from the repository root:
+
+```sh
+mkdir -p out
+javac -encoding UTF-8 -d out src/list/Main.java
+java -cp out list.Main
+```
+
+Choose an option from the menu:
+
+```text
+1. Adicionar tarefa
+2. Concluir tarefa
+3. Visualizar a lista de tarefas
+4. Remover tarefa
+5. Finalizar
+```
+
+For completion and removal, enter the task number shown in the list.
+
+## What this project demonstrates
+
+- Dynamic collections with `ArrayList`.
+- Reading console input with `Scanner`.
+- Splitting operations into methods.
+- Checking empty task names, empty lists, and task number ranges.
+
+## Current scope
+
+This is an early learning project. Data is not persisted after exit. Non-numeric task selections can raise an error, and completing a task twice appends the completion marker again. Input handling, a task model, persistence, and automated tests are possible next steps.
+
+The compile/run commands match the package and source layout. They were not executed as part of this documentation update.
+
+## Em português
+
+Aplicação de terminal em Java que permite adicionar, concluir, visualizar e remover tarefas. Foi criada para praticar listas dinâmicas, métodos, estruturas de controle e entrada de dados com `Scanner`.
+
+As tarefas ficam apenas na memória e são perdidas ao encerrar o programa. Para executar, compile `src/list/Main.java` com os comandos acima e inicie a classe `list.Main`.
+
+Sugestões de melhoria e contribuições são bem-vindas por issues e pull requests.
